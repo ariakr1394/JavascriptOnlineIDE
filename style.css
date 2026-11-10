@@ -37,7 +37,7 @@ h2 {
     border-radius: 14px;
 
     width: 70vw;
-    min-height: 70vh;
+    min-height: 60vh;
 
     padding: 16px;
     text-align: left;
@@ -205,4 +205,45 @@ button:active {
     flex: 1;
     min-width: 0;
     overflow-wrap: anywhere;
+}
+
+/* Input Console */
+.input-console {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 70vw;
+    margin-top: 12px;
+    padding: 12px 16px;
+
+    background-color: #222222;
+    border: 1px solid #383838;
+    border-radius: 10px;
+}
+
+.input-prefix {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-console input {
+    flex: 1;
+    background: transparent;
+    color: white;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+.input-console input:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.input-console input::placeholder {
+    color: #777777;
 }
